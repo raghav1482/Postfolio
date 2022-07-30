@@ -1,4 +1,13 @@
 
+body{animation: 2s ease-out 0s 1 FadeIn;}
+@keyframes FadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
 .navbarr{
   position: sticky;
   top: 0px;
@@ -6,6 +15,7 @@
   background-color: white;
   padding-bottom: 2vw;
 }
+
 .nav{
     list-style-type:none;
     float: right;
@@ -41,7 +51,42 @@
     font-size: 7vw;
     margin-left: 60%;
     padding-top: 5%;
+    animation: 2s ease-out 0s 1 slideIntop;
 }
+.opacity{
+  animation: 1s ease-out 0s 1 opacity;
+}
+@keyframes slideIntop {
+  0% {
+    transform: translateY(-100%);
+  }
+  40% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideInleft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
 .topnav {
     overflow: hidden;
     background-color: rgb(255, 255, 255);
